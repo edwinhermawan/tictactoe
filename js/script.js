@@ -50,3 +50,13 @@ function playBox(){
 
 	playerTurn +=1
 	}
+
+function reset_board(){
+	for(r=0;r<=2;++r)
+	{
+		for(c=0;c<=2;++c)
+		{
+			document.getElementById("cell"+(r+1)+"_"+(c+1)).innerHTML = ""; 
+		}
+	}
+}
