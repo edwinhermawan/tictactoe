@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        header{
+            line-height: 1.5em;
+            text-align: center;
+            font-size: 4em;
+            background: yellow;
+        }
+        #grid{
+            height: 305px;
+            width: 309px;
+            /*float: left;*/
+            margin: 1em auto;
+        }
+        .cell{
+            height:100px;
+            width: 100px;
+            float: left;
+        }
+        .row{
+            border-bottom: 2px solid black;
+        }
+        .left{
+            border-right: 2px solid black;
+
+        }
+        .right{
+            border-left: 2px solid black;
+        }
+
+        #footer{
+            clear: both;
+            line-height: 1.5em;
+            text-align: center;
+            font-size: 4em;
+            background: yellow;
+            margin: 10 auto;
+        }
+        </style>
+    
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header><a href="game_begin.html">START GAME!</a></header>
+    
+        <div id="grid">
+            <div class="cell row left" ></div>
+            <div class="cell row"></div>
+            <div class="cell row right"></div>
+            <div class="cell row left"></div>
+            <div class="cell row"></div>
+            <div class="cell row right"></div>
+            <div class="cell left"></div>
+            <div class="cell"></div>
+            <div class="cell right"></div>
+        </div>
+        <div id="footer"><a href="game_begin.html">START GAME!</a></div>
+    </body>
+</html>
