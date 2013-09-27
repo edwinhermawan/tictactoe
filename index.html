@@ -29,16 +29,18 @@
             font-size: 4em;
             background: yellow;
         }
-        #grid{
-            height: 305px;
-            width: 309px;
-            /*float: left;*/
-            margin: 1em auto;
-        }
-        .cell{
-            height:100px;
-            width: 100px;
-            float: left;
+       #grid{
+			height: 305px;
+			width: 309px;
+			/*float: left;*/
+			margin: 1em auto;
+		}
+		.cell{
+			height:100px;
+			width: 100px;
+			float: left;
+			line-height: 6em;
+			text-align: center;
         }
         .row{
             border-bottom: 2px solid black;
@@ -60,25 +62,30 @@
             margin: 10 auto;
         }
         </style>
+
+        <script type="text/javascript" src="js/script.js">
+			
+		</script>
     
     </head>
-    <body>
+    <body onclick="navCells();">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header><a href="game_begin.html">START GAME!</a></header>
     
         <div id="grid">
-            <div class="cell row left" ></div>
-            <div class="cell row"></div>
-            <div class="cell row right"></div>
-            <div class="cell row left"></div>
-            <div class="cell row"></div>
-            <div class="cell row right"></div>
-            <div class="cell left"></div>
-            <div class="cell"></div>
-            <div class="cell right"></div>
-        </div>
-        <div id="footer"><a href="game_begin.html">START GAME!</a></div>
+			<div class="cell row left left_row" id="cell1_1"onclick="playBox()"></div>
+			<div class="cell row" id="cell1_2" onclick="playBox()"></div>
+			<div class="cell row right" id="cell1_3" onclick="playBox()"></div>
+			<div class="cell row left left_row" id="cell2_1" onclick="playBox()"></div>
+			<div class="cell row" id="cell2_2" onclick="playBox()"></div>
+			<div class="cell row right" id="cell2_3" onclick="playBox()"></div>
+			<div class="cell left left_row" id="cell3_1" onclick="playBox()"></div>
+			<div class="cell" id="cell3_2" onclick="playBox()"></div>
+			<div class="cell right" id="cell3_3" onclick="playBox()"></div>
+		</div>
+	
+        <div id="footer" ><button type="button" onclick="reset_board()">Reset!</button></div>
     </body>
 </html>
